@@ -1,0 +1,93 @@
+// Buttons
+.btn, .button, .woocommerce button.button, .woocommerce button.button.alt, .woocommerce #respond input#submit, .woocommerce a.button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  background: none;
+  outline: 0 none;
+  border: 0 none;
+  border-radius: 30px;
+  padding: 16px 48px;
+  font-weight: 400;
+  font-size: 20px;
+  background-color: $btn;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+  line-height: 0.9;
+  box-shadow: 0 11px 19px 0 rgba(0, 83, 128, 0.32);
+
+  &:hover {
+    background-color: $bth-hover;
+    color: $white;
+  }
+
+  &_light {
+    background-color: $btn-light;
+  }
+  &_single-add {
+    box-shadow: 0 7px 19px 0 rgba(88, 138, 138, 0.59);
+  }
+  &_cart-checkout {
+    margin-left: 20px;
+  }
+
+  @include max-w(920px) {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+
+  &_remove {
+    border: 1px solid #00537f;
+    background-color: transparent;
+    color: #00537f;
+    box-shadow: none;
+    padding: 11px 20px;
+    font-size: 16px;
+    font-weight: normal;
+
+    &:hover {
+      background-color: #00537f;
+      color: $white;
+    }
+
+    @include max-w(920px) {
+      padding: 8px 20px;
+    }
+  }
+
+  &_update {
+    background-color: $white;
+    color: $btn;
+    box-shadow: 0 11px 19px 0 rgba(0, 83, 128, 0.32);
+    border: 1px solid transparent;
+
+    @include max-w(820px) {
+      min-width: 140px;
+      text-align: center;
+      padding: 10px;
+      display: block;
+    }
+    @include max-w(360px) {
+      min-width: 100px;
+    }
+
+    &:hover {
+      border: 1px solid $btn;
+      background-color: $white;
+      color: $btn;
+    }
+  }
+ }
+
+//Button inner decorator
+.btn-icon {
+  display: block;
+  font-size: 12px;
+
+  &_right {
+    margin-left: 10px;
+    transform: translate(0, 10%);
+  }
+}
+

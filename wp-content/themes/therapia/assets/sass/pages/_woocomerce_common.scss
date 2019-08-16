@@ -1,0 +1,231 @@
+/* common */
+.default-page {
+  padding: 20px 0 200px;
+
+  .page-title {
+    font-size: 30px;
+  }
+}
+.icon {
+  display: inline-block;
+}
+
+.summary .wcppec-checkout-buttons {
+  display: none;
+}
+
+.woocommerce div.product div.summary {
+  margin: 0;
+  padding-left: 20px;
+
+
+  @include max-w($screen-lg) {
+    width: 800px;
+
+    @include max-w($screen-lg) {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+.related-title {
+  margin-bottom: 80px;
+}
+.entry-summary .price {
+  margin-bottom: 30px;
+}
+
+.woocommerce div.product .product_title {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0 0 10px;
+
+  @include max-w($screen-md) {
+    font-size: 30px;
+  }
+}
+
+.woocommerce div.product form.cart .variations td.label {
+  @include max-w($screen-md) {
+    margin-top: 0;
+  }
+}
+
+.woocommerce div.product .woocommerce-tabs .panel * {
+  color: #7b7b7b;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+.woocommerce div.product .woocommerce-tabs .panel {
+  p, li, span {
+    margin-bottom: 35px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #7b7b7b;
+  }
+}
+
+.woocommerce .star-rating {
+  width: 100%;
+  line-height: 1;
+  height: 1.2em;
+}
+
+.related  h2{
+  font-size: 34px;
+}
+
+.woocommerce div.product .woocommerce-tabs ul.tabs li::after {
+  display: none;
+}
+.woocommerce div.product .woocommerce-tabs ul.tabs li::before {
+  display: none;
+}
+
+.entry-summary_full>.price {
+  display: none;
+}
+
+.archive-wrapper, .error-page_wrapp {
+  padding: 150px 0;
+}
+
+
+.entry-content, .entry-summary, .page-content {
+  margin: 0;
+}
+.default-page article {
+  margin-bottom: 30px;
+
+  .page-title {
+    margin-bottom: 10px;
+  }
+}
+
+.entry-thumbnail {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* message */
+.woocommerce-message {
+  border-top-color: $theme;
+
+  @include max-w($screen-md) {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    text-align: center;
+    flex-direction: column;
+
+    &:before {
+      display: none;
+    }
+
+    a.button {
+      display: block;
+      margin: 0 auto 15px;
+      text-align: center;
+    }
+  }
+
+  &:before {
+    color: $theme;
+  }
+}
+
+
+/* fix pagination */
+.woocommerce nav.woocommerce-pagination ul li a:focus {
+  background-color: inherit;
+  color: inherit;
+}
+
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+  color: $white;
+  background-color: $theme;
+}
+
+.woocommerce nav.woocommerce-pagination ul, .woocommerce nav.woocommerce-pagination ul li {
+  border: 0;
+  padding: 10px 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a {
+  background-color: $white;
+  color: $theme;
+  transition: 0.2s;
+  box-shadow: 0 0 8px rgba(40,79,101,.22);
+  border: 0;
+
+  &:hover {
+    background-color: #4ac2c3;
+    color: $white;
+  }
+
+}
+
+.woocommerce nav.woocommerce-pagination ul li a.next, .woocommerce nav.woocommerce-pagination ul li a.prev {
+  border: 0;
+  background-color: $white;
+  color: $theme;
+  transition: 0.2s;
+
+  &:hover {
+    color: $white;
+    background-color: #4ac2c3;
+  }
+
+  @include max-w($screen-md) {
+    display: none;
+  }
+}
+
+.woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span.current {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+
+  @include max-w($screen-md) {
+    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    margin: 0;
+
+    @include max-w($screen-md) {
+      width: auto;
+      height: auto;
+      background-color: inherit;
+      box-shadow: none;
+      font-size: 16px;
+      color: $black;
+
+      &:hover {
+        background-color: inherit;
+        color: $black;
+      }
+    }
+  }
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current {
+  @include max-w($screen-md) {
+    width: auto;
+    height: auto;
+    background-color: inherit;
+    box-shadow: none;
+    font-size: 16px;
+    color: $theme;
+
+    &:hover {
+      background-color: inherit;
+      color: $theme;
+    }
+  }
+}
+.woocommerce .page-numbers {
+  border-radius: 50%;
+}
+

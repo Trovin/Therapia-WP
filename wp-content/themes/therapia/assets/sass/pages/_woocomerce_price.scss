@@ -1,0 +1,41 @@
+/* price styles */
+ins {
+  text-decoration: none;
+  border: 0;
+}
+.woocommerce-loop-product__title {
+  font-family: $font-family;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+.woocommerce ul.products li.product .price, .woocommerce-Price-amount {
+  color: $price;
+  font-size: 24px;
+  font-family: $font-family;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.4;
+  word-wrap: break-word;
+
+  @include max-w(920px) {
+    font-size: 20px;
+  }
+}
+del .woocommerce-Price-amount {
+  font-size: 16px;
+}
+
+/* sale label */
+.woocommerce span.onsale {
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #d23231;
+  border: 2px solid $white;
+}

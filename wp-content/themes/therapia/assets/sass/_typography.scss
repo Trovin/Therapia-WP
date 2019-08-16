@@ -1,0 +1,114 @@
+// Include fonts
+// font-family: 'Lato';
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src:  local('Lato'), local('LatoRegular');
+  src:  url('../fonts/Lato/LatoRegular/LatoRegular.eot');
+  src:  url('../fonts/Lato/LatoRegular/LatoRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/LatoRegular/LatoRegular.woff') format('woff'),
+        url('../fonts/Lato/LatoRegular/LatoRegular.ttf') format('truetype'),
+        url('../fonts/Lato/LatoRegular/LatoRegular.svg#LatoRegular') format('svg');
+}
+
+// font-weight: 700;
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src:  local('Lato'), local('LatoBold');
+  src:  url('../fonts/Lato/LatoBold/LatoBold.eot');
+  src:  url('../fonts/Lato/LatoBold/LatoBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Lato/LatoBold/LatoBold.woff') format('woff'),
+        url('../fonts/Lato/LatoBold/LatoBold.ttf') format('truetype'),
+        url('../fonts/Lato/LatoBold/LatoBold.svg#LatoBold') format('svg');
+}
+
+
+// font-family: 'Bodoni';
+// font-weight: 400;
+@font-face {
+  font-family: 'Bodoni';
+  font-weight: 400;
+  src:  local('Bodoni'), local('Bodoni');
+  src:  url('../fonts/Bodoni/BodoniRegular/BadoniRegular.eot');
+  src:  url('../fonts/Bodoni/BodoniRegular/BadoniRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Bodoni/BodoniRegular/BadoniRegular.woff') format('woff'),
+  url('../fonts/Bodoni/BodoniRegular/BadoniRegular.ttf') format('truetype'),
+  url('../fonts/Bodoni/BodoniRegular/BadoniRegular.svg#BadoniRegular') format('svg');
+}
+
+
+// Headlings
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family;
+  color: inherit;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 1.2;
+
+  @include max-w($screen-md) {
+    font-size: 40px;
+  }
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: -0.1px;
+
+  @include max-w(1100px) {
+    font-size: 48px;
+  }
+
+  @include max-w($screen-md) {
+    font-size: 34px;
+  }
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: bold;
+
+  @include max-w($screen-md) {
+    font-size: 26px;
+  }
+
+}
+
+h4 {
+  font-size: 22px;
+
+  @include max-w($screen-md) {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: normal;
+
+  @include max-w($screen-md) {
+    font-size: 18px;
+  }
+}
+h6 {
+  font-size: 16px;
+
+  @include max-w($screen-md) {
+    font-size: 14px;
+  }
+}
+
+
+p {
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: normal;
+  color: $text;
+}
+
+@include max-w(991px) {
+  font-size: 55px;
+}

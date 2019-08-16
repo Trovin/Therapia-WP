@@ -1,0 +1,29 @@
+.gallery-slider {
+  text-align: center;
+}
+.nav-slider_icon {
+  font-size: 30px;
+  cursor: pointer;
+
+  @include max-w(992px) {
+    position: absolute;
+  }
+
+  &-left {
+    @include max-w(992px) {
+      left: -25px;
+      top: 50%;
+      transform: translate(0, -50%) rotate(-90deg);
+    }
+  }
+
+  &-right {
+    @include max-w(992px) {
+      right: -25px;
+      top: 50%;
+      transform: translate(0, -50%) rotate(-90deg);
+    }
+  }
+
+
+}

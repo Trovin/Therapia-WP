@@ -1,0 +1,125 @@
+.main-nav {
+  margin-right: 230px;
+  padding-top: 5px;
+
+  @include max-w(991px) {
+    margin-right: 60px;
+  }
+  @include max-w($screen-md) {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  ul, ol {
+    list-style: none;
+  }
+}
+.main-nav__list {
+  display: flex;
+
+  @include max-w($screen-md) {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-nav__li {
+  margin-right: 40px;
+  padding: 10px 0;
+  cursor: pointer;
+  position: relative;
+
+  @include max-w($screen-md) {
+    margin: 0;
+    text-align: center;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    .dropdown-content {
+      display: block;
+
+      @include max-w($screen-md) {
+        display: none;
+      }
+    }
+  }
+
+
+  .dropper-nav {
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    min-height: 0;
+
+    @include max-w($screen-md) {
+      position: relative;
+      margin-right: -15px;
+      color: $black;
+      font-size: 22px;
+    }
+  }
+}
+.main-nav__link {
+  color: $white;
+  transition: 0.2s;
+
+  @include max-w($screen-md) {
+    color: $black;
+  }
+
+  &:hover {
+    color: $theme;
+
+    @include max-w($screen-md) {
+      color: $black;
+    }
+  }
+}
+
+.dropdown-content {
+  width: 220px;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  top: 35px;
+  border-radius: 10px;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  @include max-w($screen-md) {
+    position: relative;
+    top: inherit;
+    left: inherit;
+  }
+
+  .menu-item {
+    width: 100%;
+
+    .main-nav__link {
+      color: $white;
+
+      &:hover {
+        color: $theme;
+      }
+
+      @include max-w($screen-md) {
+        color: $black;
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  }
+
+  @include max-w($screen-md) {
+    position: relative;
+    display: none;
+    padding: 10px 0 0;
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,18 @@
+#header_product-layer {
+  box-shadow: 10px 4px 44px 0 rgba(40, 79, 101, 0.19);
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+}
+
+.container_product {
+  margin-top: 15px;
+  z-index: 4;
+
+  @include max-w($screen-md) {
+    margin: 0;
+  }
+}

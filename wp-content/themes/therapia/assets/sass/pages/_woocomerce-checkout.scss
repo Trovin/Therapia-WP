@@ -1,0 +1,139 @@
+.checkout-page {
+  padding: 130px 0 245px;
+  overflow: hidden;
+
+  @include max-w($screen-md) {
+    padding: 170px 0 120px;
+  }
+}
+
+#customer_details {
+  overflow: hidden;
+}
+.woocommerce form .form-row-first, .woocommerce form .form-row-last, .woocommerce-page form .form-row-first, .woocommerce-page form .form-row-last {
+  width: 100%;
+}
+
+.checkout-form_left {
+  width: 350px;
+  max-width: 100%;
+  float: left;
+
+  @include max-w(800px) {
+    width: 100%;
+    margin-bottom: 65px;
+  }
+}
+
+.checkout-form_right {
+  width: 350px;
+  max-width: 100%;
+  float: right;
+
+  @include max-w(800px) {
+    width: 100%;
+  }
+}
+
+#order_comments_field {
+  display: none;
+}
+
+
+//restyle select
+.selection {
+  height: 50px;
+  margin-top: -10px;
+  display: block;
+}
+#billing_country_field label, #shipping_country_field label {
+  display: block;
+  margin-bottom: 10px;
+}
+.select2-container--default .select2-selection--single {
+  padding: 10px 0;
+  height: 50px;
+  border-radius: 30px;
+  border: 1px solid #dedede;
+}
+.select2-dropdown {
+  border: 1px solid #dedede;
+}
+
+//common
+.payment-form_title {
+  font-size: 26px;
+  font-weight: bold;
+
+  * {
+    font-size: 26px;
+    font-weight: bold;
+
+    @include max-w($screen-md) {
+      font-size: 18px;
+    }
+  }
+
+  @include max-w($screen-md) {
+    font-size: 18px;
+  }
+}
+
+
+/* decor images */
+.decor-image__page_left_checkout {
+  box-shadow: 0 0 38px 0 rgba(40, 79, 101, 0.22);
+  background-color: $circle_blue;
+  border: 10px solid $white;
+  width: 1190px;
+  height: 790px;
+  border-radius: 50%;
+  left: -720px;
+  top: -550px;
+  position: absolute;
+}
+.decor-image__page_right_checkout {
+  width: 390px;
+  height: 390px;
+  background-color: $circle_blue;
+  right: -200px;
+  top: -200px;
+}
+.decor-image__page_middle-left_checkout {
+  width: 200px;
+  height: 250px;
+  background-color: $white;
+  border: 25px solid $circle;
+  left: -145px;
+  top: 460px;
+}
+.decor-image__page_middle-right_checkout {
+  width: 280px;
+  height: 260px;
+  background-color: $circle;
+  border: 10px solid $white;
+  right: -160px;
+  top: 420px;
+}
+
+.payment-wrapper {
+  margin-top: 60px;
+  text-align: center;
+
+  @include max-w($screen-md) {
+    margin-top: 15px;
+    text-align: right;
+  }
+}
+
+.validate-state  label {
+  padding: 10px 0;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+}
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single {
+  border-radius: 30px;
+}

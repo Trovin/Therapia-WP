@@ -1,0 +1,47 @@
+.social {
+  width: 105px;
+  z-index: 2;
+
+  @include max-w($screen-md) {
+    margin: 20px 0;
+  }
+
+  &_footer {
+    @include max-w($screen-md) {
+      margin: 0;
+    }
+    @include max-w(575px) {
+      margin: 0 auto 10px auto;
+    }
+  }
+}
+.social__list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.social__item {
+  display: inline-block;
+  color: $black;
+}
+.social__link {
+  transition: 0.2s;
+  font-size: 18px;
+  color: $black;
+  display: inline-block;
+
+  &_cat {
+    color: $white;
+  }
+  @include max-w($screen-md) {
+    color: $black;
+  }
+
+  &:hover {
+    color: $theme;
+  }
+}
+
+.social__link_footer{
+  color: $black;
+}

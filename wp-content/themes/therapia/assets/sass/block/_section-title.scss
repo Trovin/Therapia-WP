@@ -1,0 +1,60 @@
+.section-title {
+  position: relative;
+  margin-bottom: 40px;
+  color: $black;
+
+  @include max-w($screen-md) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  &:after {
+    counter-increment: section;
+    content: '0'counter(section);
+    display: inline-block;
+    position: absolute;
+    font-family: $badoni, 'sans-serif', 'Helvetica';
+    font-weight: 200;
+    font-size: 140px;
+    left: 110px;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: $section-counter;
+    z-index: -1;
+
+    @include max-w(991px) {
+      font-size: 80px;
+    }
+
+    @include max-w($screen-md) {
+      display: none;
+    }
+  }
+
+  &_best-deal {
+    margin-bottom: 15px;
+
+    &:after {
+      left: inherit;
+      right: -5px;
+    }
+  }
+
+  &_popular {
+    opacity: 0;
+  }
+
+  &_lastest {
+    margin-bottom: 80px;
+
+    @include max-w($screen-md) {
+      margin-bottom: 30px;
+    }
+
+    &:after {
+      left: 90px;
+    }
+  }
+}
+
+
