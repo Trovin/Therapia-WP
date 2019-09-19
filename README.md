@@ -18,4 +18,11 @@
 
 префикс для таблиц: `wp_`  
 
+=========================
+
 DOMAIN NAME therapia.test
+
+wp-admin
+admin1020
+Xa@mLLGyCMLZ2R0ItE
+
